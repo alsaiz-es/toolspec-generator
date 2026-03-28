@@ -1,6 +1,6 @@
 # ToolSpec Generator
 
-A Claude Desktop skill that generates [ToolSpec](https://github.com/alsaiz/llm-toolspec) descriptors from API documentation.
+A Claude Desktop skill that generates [ToolSpec](https://github.com/alsaiz-es/llm-toolspec) descriptors from API documentation.
 
 ## What it does
 
@@ -8,7 +8,7 @@ Give it API documentation (a URL, an OpenAPI spec, or a plain text description) 
 
 ## Install
 
-Download `toolspec-generator.skill` from the [releases](https://github.com/alsaiz/toolspec-generator/releases) page and open it with Claude Desktop. The skill installs automatically.
+Download `toolspec-generator.skill` from the [releases](https://github.com/alsaiz-es/toolspec-generator/releases) page and open it with Claude Desktop. The skill installs automatically.
 
 Alternatively, drag and drop the `.skill` file onto the Claude Desktop window.
 
@@ -61,7 +61,7 @@ toolspec-generator/
 
 ## Related
 
-- [llm-toolspec](https://github.com/alsaiz/llm-toolspec) — The spec, SDK, and CLI for consuming ToolSpec descriptors
+- [llm-toolspec](https://github.com/alsaiz-es/llm-toolspec) — The spec, SDK, and CLI for consuming ToolSpec descriptors
 
 ## License
 
