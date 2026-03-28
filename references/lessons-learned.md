@@ -81,7 +81,7 @@ After generating a descriptor, test the key paths:
 
 ## Lesson 10: The knowledge layer is only for non-obvious domains
 
-For a simple CRUD API (e.g., a todo list), no knowledge layer is needed — any LLM understands the domain. For MusicBrainz, the knowledge layer is essential because the LLM needs to understand the entity hierarchy (Artist → Release Group → Release → Medium → Track → Recording), the difference between lookup/browse/search operations, and quirks like the 25-entity cap on lookup inc= results. For JVM performance analysis, it's even more critical because the LLM needs to know diagnostic patterns, what metrics mean, and how to interpret results.
+For a simple CRUD API (e.g., a todo list), no knowledge layer is needed — any LLM understands the domain. For MusicBrainz, the knowledge layer is essential because the LLM needs to understand the entity hierarchy (Artist → Release Group → Release → Medium → Track → Recording), the difference between lookup/browse/search operations, and quirks like the 25-entity cap on lookup inc= results. For a specialized diagnostic API, it would be even more critical — the LLM would need to know analysis patterns, what metrics mean, and how to interpret results.
 
 Rule of thumb: if you need to explain to a junior developer what the results mean, you need a knowledge layer. If the results are self-explanatory, skip it.
 
