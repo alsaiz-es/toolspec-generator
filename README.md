@@ -8,9 +8,7 @@ Give it API documentation (a URL, an OpenAPI spec, or a plain text description) 
 
 ## Install
 
-Download `toolspec-generator.skill` from the [releases](https://github.com/alsaiz-es/toolspec-generator/releases) page and open it with Claude Desktop. The skill installs automatically.
-
-Alternatively, drag and drop the `.skill` file onto the Claude Desktop window.
+Clone the repo and add the `SKILL.md` and `references/` directory to your Claude Desktop project.
 
 ## Usage
 
@@ -32,9 +30,8 @@ The skill will:
 Save the output as `<service>.toolspec.json`, then:
 
 ```bash
-cd your-llm-toolspec-project
-npx tsx src/cli/index.ts validate <file>
-npx tsx src/cli/index.ts install <file>
+npx toolspec validate <file>
+npx toolspec install <file>
 # Restart Claude Desktop
 ```
 

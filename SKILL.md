@@ -122,8 +122,8 @@ Before presenting the output, verify:
 
 Show the complete JSON to the user. Suggest they:
 1. Save it as `<service-name>.toolspec.json`
-2. Validate: `npx tsx src/cli/index.ts validate <file>`
-3. Install: `npx tsx src/cli/index.ts install <file>`
+2. Validate: `npx toolspec validate <file>`
+3. Install: `npx toolspec install <file>`
 4. Restart Claude Desktop and test
 
 If the user reports issues after testing, update the descriptor to reflect real behavior.

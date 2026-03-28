@@ -58,8 +58,8 @@ The generated descriptor is available as the reference example: [`references/mus
 
 ```bash
 cd your-llm-toolspec-project
-npx tsx src/cli/index.ts validate musicbrainz.toolspec.json
-npx tsx src/cli/index.ts install musicbrainz.toolspec.json
+npx toolspec validate musicbrainz.toolspec.json
+npx toolspec install musicbrainz.toolspec.json
 # Restart Claude Desktop
 ```
 
