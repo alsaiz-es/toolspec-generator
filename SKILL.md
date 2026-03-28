@@ -1,11 +1,11 @@
 ---
 name: toolspec-generator
-description: "Generate Open LLM Tool Specification (ToolSpec) descriptors from API documentation. Use this skill whenever the user wants to create a toolspec.json file, convert API documentation to ToolSpec format, generate LLM tool descriptors from OpenAPI/Swagger specs, or make any API consumable by LLMs via ToolSpec. Also trigger when the user mentions 'toolspec', 'tool specification', 'LLM tool descriptor', or wants to expose an API as MCP tools. This skill reads API docs (URLs, OpenAPI specs, or plain text descriptions) and outputs a valid toolspec.json that can be installed as an MCP server proxy."
+description: "Generate ToolSpec descriptors from API documentation. Use this skill whenever the user wants to create a toolspec.json file, convert API documentation to ToolSpec format, generate LLM tool descriptors from OpenAPI/Swagger specs, or make any API consumable by LLMs via ToolSpec. Also trigger when the user mentions 'toolspec', 'tool specification', 'LLM tool descriptor', or wants to expose an API as MCP tools. This skill reads API docs (URLs, OpenAPI specs, or plain text descriptions) and outputs a valid toolspec.json — a semantic manifest that tells LLMs what each endpoint does, when to use it, and how to chain calls together."
 ---
 
 # ToolSpec Generator
 
-Generate valid ToolSpec descriptors from API documentation. ToolSpec is a vendor-agnostic JSON format that describes APIs for LLM consumption — think "OpenAPI for LLMs" with three layers: Service (how to connect), Tools (what to call), and Knowledge (how to reason).
+Generate valid ToolSpec descriptors from API documentation. ToolSpec is a semantic manifest for remote APIs consumed by LLMs — it adds selection guidance (`when_to_use`), workflow examples, and domain knowledge on top of what OpenAPI and MCP already provide. Three layers: Service (how to connect), Tools (what to call), and Knowledge (how to reason).
 
 ## When to read reference files
 
